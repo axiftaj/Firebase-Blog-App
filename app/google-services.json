@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "107923868141",
+    "firebase_url": "https://fir-blog-app-f0177.firebaseio.com",
+    "project_id": "fir-blog-app-f0177",
+    "storage_bucket": "fir-blog-app-f0177.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107923868141:android:5bde32bb0faa835fe87fe4",
+        "android_client_info": {
+          "package_name": "com.techeasesolution.firebaseblogapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107923868141-4vpcf8lnc1kl0262dr72e8ntj36h0edv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techeasesolution.firebaseblogapp",
+            "certificate_hash": "64f7362a6d0f7bcfcfbaf9be10db474a730f6195"
+          }
+        },
+        {
+          "client_id": "107923868141-tjnc86cf9n7i9km2v68t81aqe939dn7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3BPEfSdsZe3WOA5jaPEMdlMBaw6Iswb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107923868141-tjnc86cf9n7i9km2v68t81aqe939dn7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
