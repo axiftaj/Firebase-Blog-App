@@ -26,6 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
+    //init
     private EditText loginEmail , loginPassowrd ;
     Button loginBtn ;
     TextView forgotPassword , needAnAccount ;
