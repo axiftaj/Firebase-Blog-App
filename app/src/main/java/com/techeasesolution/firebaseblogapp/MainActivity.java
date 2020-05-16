@@ -46,37 +46,14 @@ public class MainActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         auth = FirebaseAuth.getInstance();
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Recover Password");
 
-        LinearLayout linearLayout = new LinearLayout(this);
-
-        //view to set in dialog
-        final EditText emailEt = new EditText(this);
-        emailEt.setHint("Email");
-        emailEt.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
-
-        linearLayout.addView(emailEt);
-        linearLayout.setPadding(10 , 10,10,10);
-
-        emailEt.setMinEms(2);
-        builder.setView(linearLayout);
-        builder.setPositiveButton("Recover", new DialogInterface.OnClickListener() {
+        //click on forgot password
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
-                String email = emailEt.getText().toString().trim();
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this , ForgotPasswordActivity.class));
             }
         });
-
-        //button cancel
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-
-        builder.create().show();
 
         needAnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,4 +121,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
-// in this video we will create new activity to name add post to desing new layout so lets start
+/* Forgot Password with firebase
+    1. first we create new activity to asked for user email when he enter the email
+    we will user sendPasswordResetEmail send the link to user to reset the email
+    we will send him an link to change the password
+* */
